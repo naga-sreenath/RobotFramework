@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.1 on win32)" generated="2025-03-19T20:28:36.353509" rpa="false" schemaversion="5">
+<suite id="s1" name="GoogleSearchTest" source="C:\Users\LENOVO\PycharmProjects\RobotFramework\Tests\GoogleSearchTest.robot">
+<test id="s1-t1" name="Google Search Test" line="5">
+<kw name="Given the user is on the Google homepage" owner="GoogleSearchKeywords">
+<kw name="Open Google Homepage" owner="KeywordLibrary">
+<kw name="Open Browser To Page" owner="ResourceLibrary">
+<kw name="Open Browser ${url}">
+<msg time="2025-03-19T20:28:36.648659" level="FAIL">No keyword with name 'Open Browser ${url}' found. Did you try using keyword 'SeleniumLibrary.Open Browser' and forgot to use enough whitespace between keyword and arguments?</msg>
+<arg>Chrome</arg>
+<status status="FAIL" start="2025-03-19T20:28:36.648616" elapsed="0.000095">No keyword with name 'Open Browser ${url}' found. Did you try using keyword 'SeleniumLibrary.Open Browser' and forgot to use enough whitespace between keyword and arguments?</status>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2025-03-19T20:28:36.648851" elapsed="0.000029"/>
+</kw>
+<arg>https://www.google.com</arg>
+<doc>Open a Browser and navigate to the provided URL.</doc>
+<status status="FAIL" start="2025-03-19T20:28:36.646840" elapsed="0.002158">No keyword with name 'Open Browser ${url}' found. Did you try using keyword 'SeleniumLibrary.Open Browser' and forgot to use enough whitespace between keyword and arguments?</status>
+</kw>
+<doc>Open the Google homapge in a browser.</doc>
+<status status="FAIL" start="2025-03-19T20:28:36.646610" elapsed="0.002485">No keyword with name 'Open Browser ${url}' found. Did you try using keyword 'SeleniumLibrary.Open Browser' and forgot to use enough whitespace between keyword and arguments?</status>
+</kw>
+<status status="FAIL" start="2025-03-19T20:28:36.646223" elapsed="0.002950">No keyword with name 'Open Browser ${url}' found. Did you try using keyword 'SeleniumLibrary.Open Browser' and forgot to use enough whitespace between keyword and arguments?</status>
+</kw>
+<kw name="When the user searches for &quot;testing&quot;" owner="GoogleSearchKeywords" source_name="When the user searches for &quot;${search_term}&quot;">
+<status status="NOT RUN" start="2025-03-19T20:28:36.649451" elapsed="0.000034"/>
+</kw>
+<kw name="Then the search results should contain &quot;testing&quot;" owner="GoogleSearchKeywords" source_name="Then the search results should contain &quot;${expected_text}">
+<status status="NOT RUN" start="2025-03-19T20:28:36.649715" elapsed="0.000032"/>
+</kw>
+<status status="FAIL" start="2025-03-19T20:28:36.645009" elapsed="0.004951">No keyword with name 'Open Browser ${url}' found. Did you try using keyword 'SeleniumLibrary.Open Browser' and forgot to use enough whitespace between keyword and arguments?</status>
+</test>
+<status status="FAIL" start="2025-03-19T20:28:36.355005" elapsed="0.295910"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="GoogleSearchTest" id="s1" pass="0" fail="1" skip="0">GoogleSearchTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

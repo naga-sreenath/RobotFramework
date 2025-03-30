@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.1 on win32)" generated="2025-03-19T22:39:04.821246" rpa="false" schemaversion="5">
+<suite id="s1" name="GoogleSearchTest" source="C:\Users\LENOVO\PycharmProjects\RobotFramework\Tests\GoogleSearchTest.robot">
+<test id="s1-t1" name="Google Search Test" line="5">
+<kw name="Given the user is on the Google homepage" owner="GoogleSearchKeywords">
+<kw name="Open Google Homepage" owner="KeywordLibrary">
+<kw name="Open Browser To Page" owner="ResourceLibrary">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-19T22:39:05.119940" level="INFO">Opening browser 'Chrome' to base url 'https://www.google.com'.</msg>
+<arg>${url}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-19T22:39:05.119698" elapsed="3.185679"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-19T22:39:08.305705" elapsed="0.033018"/>
+</kw>
+<arg>${url}</arg>
+<doc>Open a Browser and navigate to the provided URL.</doc>
+<status status="PASS" start="2025-03-19T22:39:05.119405" elapsed="3.219671"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-19T22:39:08.339373" elapsed="0.003824"/>
+</kw>
+<arg>${url}</arg>
+<status status="PASS" start="2025-03-19T22:39:05.119072" elapsed="3.224323"/>
+</kw>
+<status status="PASS" start="2025-03-19T22:39:05.118694" elapsed="3.224848"/>
+</kw>
+<kw name="When the user searches for &quot;testing&quot;" owner="GoogleSearchKeywords" source_name="When the user searches for &quot;${search_term}&quot;">
+<kw name="Enter Search Term" owner="KeywordLibrary">
+<kw name="Enter Text" owner="ResourceLibrary">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-19T22:39:08.347017" level="INFO">Typing text 'testing' into text field 'name=q'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-19T22:39:08.345775" elapsed="0.206227"/>
+</kw>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Enter the provided text into an element identified by the given locator.</doc>
+<status status="PASS" start="2025-03-19T22:39:08.345044" elapsed="0.207165"/>
+</kw>
+<arg>name=q</arg>
+<arg>${search_term}</arg>
+<status status="PASS" start="2025-03-19T22:39:08.344479" elapsed="0.207846"/>
+</kw>
+<status status="PASS" start="2025-03-19T22:39:08.343835" elapsed="0.208590"/>
+</kw>
+<kw name="Then the search results should contain &quot;testing&quot;" owner="GoogleSearchKeywords" source_name="Then the search results should contain &quot;${expected_text}&quot;">
+<kw name="Verify Search Results" owner="KeywordLibrary">
+<kw name="Page Should Contain Text" owner="ResourceLibrary">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-03-19T22:39:08.936056" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-03-19T22:39:08.936345" level="FAIL">Page should have contained text 'testing' but did not.</msg>
+<arg>${text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2025-03-19T22:39:08.553557" elapsed="0.385012">Page should have contained text 'testing' but did not.</status>
+</kw>
+<arg>${expected_text}</arg>
+<doc>Verifies that the page contains the provided text.</doc>
+<status status="FAIL" start="2025-03-19T22:39:08.553280" elapsed="0.385490">Page should have contained text 'testing' but did not.</status>
+</kw>
+<arg>${expected_text}</arg>
+<status status="FAIL" start="2025-03-19T22:39:08.552982" elapsed="0.385932">Page should have contained text 'testing' but did not.</status>
+</kw>
+<status status="FAIL" start="2025-03-19T22:39:08.552637" elapsed="0.386396">Page should have contained text 'testing' but did not.</status>
+</kw>
+<status status="FAIL" start="2025-03-19T22:39:05.117725" elapsed="3.821472">Page should have contained text 'testing' but did not.</status>
+</test>
+<status status="FAIL" start="2025-03-19T22:39:04.835394" elapsed="4.104458"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="GoogleSearchTest" id="s1" pass="0" fail="1" skip="0">GoogleSearchTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

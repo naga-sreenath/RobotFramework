@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.1 on win32)" generated="2025-03-05T20:04:01.702625" rpa="false" schemaversion="5">
+<suite id="s1" name="RobotFramework" source="C:\Users\LENOVO\PycharmProjects\RobotFramework">
+<suite id="s1-s1" name="Tests" source="C:\Users\LENOVO\PycharmProjects\RobotFramework\Tests">
+<suite id="s1-s1-s1" name="Test1" source="C:\Users\LENOVO\PycharmProjects\RobotFramework\Tests\test1.robot">
+<test id="s1-s1-s1-t1" name="Validate Successful login" line="7">
+<kw name="Open Browser in login form">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2025-03-05T20:04:01.969992" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2025-03-05T20:04:01.969850" elapsed="1.349364"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-03-05T20:04:03.319518" level="INFO">Opening url 'https://rahulshettyacademy.com/loginpagePractise/'</msg>
+<arg>https://rahulshettyacademy.com/loginpagePractise/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-03-05T20:04:03.319392" elapsed="0.328383"/>
+</kw>
+<status status="PASS" start="2025-03-05T20:04:01.969266" elapsed="1.678637"/>
+</kw>
+<kw name="Enter user credentials">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-05T20:04:03.649113" level="INFO">Typing text 'rahulshettyacademy' into text field '//input[@id='username']'.</msg>
+<arg>//input[@id='username']</arg>
+<arg>rahulshettyacademy</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-05T20:04:03.648771" elapsed="0.138943"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-03-05T20:04:03.788185" level="INFO">Typing password into text field '//input[@id='password']'.</msg>
+<msg time="2025-03-05T20:04:03.825179" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>//input[@id='password']</arg>
+<arg>learning</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-05T20:04:03.787972" elapsed="0.078730"/>
+</kw>
+<status status="PASS" start="2025-03-05T20:04:03.648469" elapsed="0.218403"/>
+</kw>
+<kw name="Click on Sign in Button">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-03-05T20:04:03.867602" level="INFO">Clicking button '//input[@id='signInBtn']'.</msg>
+<arg>//input[@id='signInBtn']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-05T20:04:03.867458" elapsed="0.081131"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3000</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="FAIL" start="2025-03-05T20:04:03.948779" elapsed="59.261101">Execution terminated by signal</status>
+</kw>
+<status status="FAIL" start="2025-03-05T20:04:03.867216" elapsed="59.342997">Execution terminated by signal</status>
+</kw>
+<kw name="User is directed to Home Screen">
+<status status="NOT RUN" start="2025-03-05T20:05:03.210811" elapsed="0.000069"/>
+</kw>
+<status status="FAIL" start="2025-03-05T20:04:01.968540" elapsed="61.242782">Execution terminated by signal</status>
+</test>
+<doc>To Valid the login form</doc>
+<status status="FAIL" start="2025-03-05T20:04:01.733432" elapsed="61.479391"/>
+</suite>
+<status status="FAIL" start="2025-03-05T20:04:01.732319" elapsed="61.481897"/>
+</suite>
+<status status="FAIL" start="2025-03-05T20:04:01.704010" elapsed="61.511049"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="RobotFramework" id="s1" pass="0" fail="1" skip="0">RobotFramework</stat>
+<stat name="Tests" id="s1-s1" pass="0" fail="1" skip="0">RobotFramework.Tests</stat>
+<stat name="Test1" id="s1-s1-s1" pass="0" fail="1" skip="0">RobotFramework.Tests.Test1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
